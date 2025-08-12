@@ -1,22 +1,22 @@
-# WillDo! - веб-приложение для управления задачами
+# WillDo! — веб-приложение для управления задачами
 
 ## Full-stack реализация:
 
-* **Backend (Go)** -- REST API с `gorilla/mux` (http routing), `gorm` (Go ORM для PostgreSQL).
-* **Frontend (React)** -- SPA с интеграцией к API.
-* **PostgreSQL** -- легковесный образ.
-* **Nginx** -- для обратного проксирования.
-* **Docker** -- полная контейнеризация и оркестрация.
+* **Backend (Go)** — REST API с `gorilla/mux` (http routing), `gorm` (Go ORM для PostgreSQL).
+* **Frontend (React)** — SPA с интеграцией к API.
+* **PostgreSQL** — легковесный образ.
+* **Nginx** — для обратного проксирования.
+* **Docker** — полная контейнеризация и оркестрация.
 
 ---
 
 ## Особенности
 
-* **Паттерны** -- *middleware* для валидации JSON (`go-playground/validator`), *repository* для работы с БД.
-* **Валидация** -- кастомный middleware с подробными ошибками в `message` JSON-ответа.
-* **Graceful Shutdown** -- корректная обработка `SIGTERM`/`SIGINT` с 30-секундным таймаутом.
-* **Логирование** -- уровни *INFO*, *ERROR*, *DEBUG*.
-* **Обработка ошибок** -- единый формат JSON-ответов и кодов HTTP.
+* **Паттерны** — *middleware* для валидации JSON (`go-playground/validator`), *repository* для работы с БД.
+* **Валидация** — кастомный middleware с подробными ошибками в `message` JSON-ответа.
+* **Graceful Shutdown** — корректная обработка `SIGTERM`/`SIGINT` с 30-секундным таймаутом.
+* **Логирование** — уровни *INFO*, *ERROR*, *DEBUG*.
+* **Обработка ошибок** — единый формат JSON-ответов и кодов HTTP.
 * **Docker** — alpine-образы, конфигурация через переменные окружения, наружу открыт только `nginx-proxy`.
 
 ---
